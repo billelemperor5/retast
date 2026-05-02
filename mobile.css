@@ -1,0 +1,1290 @@
+/* ============================================================
+   LABO NEDJMA — MOBILE REDESIGN v2.0
+   Chrome-Safe | Clean | No Conflicts
+   ============================================================ */
+
+@media screen and (max-width: 768px) {
+
+  /* ── 1. BASE ── */
+  html {
+    overflow-x: clip !important;
+  }
+
+  body {
+    overflow-x: hidden !important;
+    padding-top: 62px !important;
+    padding-bottom: 80px !important;
+    background: #eef2f7 !important;
+  }
+
+  /* Remove heavy GPU background effects */
+  .app-bg-decor {
+    display: none !important;
+  }
+
+  body::before {
+    display: none !important;
+  }
+
+  /* ── 2. NAVBAR — Solid Blue, Chrome-Safe ── */
+  .main-navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 62px !important;
+    background: #0056b3 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    will-change: auto !important;
+    filter: none !important;
+    border-bottom: none !important;
+    box-shadow: 0 2px 12px rgba(0, 40, 100, 0.3) !important;
+    z-index: 9000 !important;
+    padding: 0 14px !important;
+  }
+
+  /* Navbar text/icons → white on blue */
+  .brand-name,
+  .brand-name strong {
+    display: none !important;
+  }
+
+  .nav-hamburger i,
+  .navbar-hamburger i,
+  .nav-hamburger span {
+    color: white !important;
+    background: white !important;
+  }
+
+  .nav-hamburger,
+  .navbar-hamburger {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    margin-right: 12px !important;
+  }
+
+  .nav-icon-btn,
+  .btn-login-gov,
+  .nav-action-btn {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+  }
+
+  .nav-icon-btn i,
+  .btn-login-gov i {
+    color: white !important;
+  }
+
+  .notif-badge {
+    border-color: #0056b3 !important;
+  }
+
+  .navbar-links {
+    display: none !important;
+  }
+
+  .nav-search-wrap {
+    display: none !important;
+  }
+
+  .nav-hamburger {
+    display: flex !important;
+  }
+
+  /* ── 3. HERO SECTION ── */
+  .hero-section {
+    background: linear-gradient(165deg, #003d80 0%, #0056b3 45%, #1a7fe8 100%) !important;
+    padding: 30px 16px 45px !important;
+    min-height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+    transform: none !important;
+    isolation: auto !important;
+    border-radius: 0 !important;
+  }
+
+  /* Removed curved bottom on hero */
+  .hero-section::after {
+    display: none !important;
+  }
+
+  .hero-bg-art {
+    display: none !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  /* Status badge above title */
+  .hero-status-badge,
+  .system-status-badge,
+  .hero-badge {
+    background: rgba(255, 255, 255, 0.18) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    font-size: 0.65rem !important;
+    padding: 4px 12px !important;
+    border-radius: 20px !important;
+    margin-bottom: 12px !important;
+    letter-spacing: 1px !important;
+  }
+
+  .hero-title {
+    font-size: 1.85rem !important;
+    color: white !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .hero-title-sub {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 2px !important;
+    text-align: center !important;
+    margin-bottom: 12px !important;
+    text-transform: uppercase !important;
+  }
+
+  .hero-desc {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.82rem !important;
+    text-align: center !important;
+    line-height: 1.55 !important;
+    margin-bottom: 20px !important;
+    max-width: 300px !important;
+  }
+
+  /* Hero action buttons */
+  .hero-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    align-items: center !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-actions .btn,
+  .hero-actions a,
+  .hero-actions button {
+    width: 100% !important;
+    padding: 13px 20px !important;
+    border-radius: 14px !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    transform: none !important;
+    transition: opacity 0.2s ease !important;
+  }
+
+  .hero-actions .btn:first-child,
+  .hero-actions a:first-child,
+  .btn-hero-primary,
+  .btn-primary.hero-btn {
+    background: white !important;
+    color: #0056b3 !important;
+    border: none !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .hero-actions .btn:last-child,
+  .hero-actions a:last-child,
+  .btn-hero-secondary,
+  .btn-hero-outline,
+  .btn-outline.hero-btn {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: white !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.4) !important;
+    box-shadow: none !important;
+  }
+
+  /* ── 4. HERO STATS — 3 cols grid ── */
+  .hero-stats-float {
+    position: static !important;
+    transform: none !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+    overflow: visible !important;
+    right: auto !important;
+    top: auto !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    flex-direction: unset !important;
+    flex-wrap: unset !important;
+  }
+
+  /* 4th badge → full width & strictly aligned left */
+  .hero-stats-float .hero-stat-badge:nth-child(4) {
+    grid-column: 1 / -1 !important;
+    justify-content: flex-start !important;
+    padding-left: 15px !important;
+    text-align: left !important;
+  }
+
+  .hero-stats-float .hero-stat-badge:nth-child(4) .hero-stat-info {
+    text-align: left !important;
+    align-items: flex-start !important;
+    margin: 0 !important;
+  }
+
+  .hero-stat-badge {
+    background: rgba(255, 255, 255, 0.16) !important;
+    border: 1px solid rgba(255, 255, 255, 0.24) !important;
+    border-radius: 8px !important;
+    padding: 10px 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+    flex-shrink: unset !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+    transition: none !important;
+  }
+
+  .hero-stat-badge:hover,
+  .hero-stat-badge:active {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .hero-stat-icon {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 0.9rem !important;
+    flex-shrink: 0 !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 9px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: white !important;
+  }
+
+  .hero-stat-val {
+    font-size: 1.1rem !important;
+    color: white !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+  }
+
+  .hero-stat-label,
+  .hero-stat-info small {
+    font-size: 0.52rem !important;
+    color: white !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+    line-height: 1.2 !important;
+  }
+
+  .content-section {
+    padding: 0 12px 20px !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
+
+  /* ── 6. DASHBOARD STAT CARDS ── */
+  .stats-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+    margin-top: 15px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .stat-card {
+    padding: 12px 12px !important;
+    border-radius: 14px !important;
+    border: none !important;
+    transform: none !important;
+    transition: opacity 0.2s ease !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 10px !important;
+    min-height: 68px !important;
+  }
+
+  .stat-card:hover,
+  .stat-card:active {
+    transform: none !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .stat-card-icon {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    border-radius: 10px !important;
+    font-size: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 0 !important;
+    background: rgba(255, 255, 255, 0.22) !important;
+    color: white !important;
+    flex-shrink: 0 !important;
+  }
+
+  .stat-card-info {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .stat-card-label {
+    font-size: 0.55rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.6px !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    margin-bottom: 2px !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .stat-card-value {
+    font-size: 1.6rem !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+    display: block !important;
+    color: white !important;
+  }
+
+  /* ── 7. MODULE GRID ── */
+  .module-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .module-card {
+    padding: 14px 12px !important;
+    border-radius: 14px !important;
+    transform: none !important;
+    transition: opacity 0.15s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07) !important;
+    gap: 8px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border-width: 1.5px !important;
+  }
+
+  .module-card:hover,
+  .module-card:active {
+    transform: none !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07) !important;
+  }
+
+  .module-icon-colored {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 10px !important;
+    font-size: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  .module-tag-colored {
+    font-size: 0.5rem !important;
+    letter-spacing: 0.8px !important;
+    padding: 2px 7px !important;
+    margin-bottom: 4px !important;
+    display: inline-block !important;
+  }
+
+  .module-body h3 {
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .module-body p {
+    font-size: 0.7rem !important;
+    line-height: 1.4 !important;
+    display: none !important;
+  }
+
+  .module-arrow-colored {
+    width: 26px !important;
+    height: 26px !important;
+    border-radius: 7px !important;
+    font-size: 0.7rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: flex-end !important;
+    margin-top: auto !important;
+  }
+
+  /* ── 8. PAGE SECTIONS ── */
+  .page-section {
+    display: none !important;
+    transform: none !important;
+    animation: none !important;
+    isolation: auto !important;
+    -webkit-transform: none !important;
+  }
+
+  .page-section.active {
+    display: block !important;
+  }
+
+  .page-content,
+  .hero-section,
+  .content-section {
+    transform: none !important;
+    -webkit-transform: none !important;
+    isolation: auto !important;
+    will-change: auto !important;
+  }
+
+  /* ── 9. PAGE BANNER ── */
+  .page-banner,
+  .section-banner {
+    border-radius: 0 !important;
+    padding: 14px 16px !important;
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+    transform: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+    min-height: auto !important;
+  }
+
+  /* Decorative left accent stripe */
+  .page-banner::after,
+  .section-banner::after {
+    display: none !important;
+  }
+
+  .page-banner::before,
+  .section-banner::before {
+    display: none !important;
+  }
+
+  .page-banner-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
+
+  .page-banner h1,
+  .page-banner h2,
+  .section-banner h1,
+  .section-banner h2 {
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    line-height: 1.3 !important;
+    letter-spacing: 0.5px !important;
+    white-space: normal !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .page-banner h2 i,
+  .section-banner h2 i {
+    font-size: 0.9rem !important;
+  }
+
+  .page-banner h2 .accent,
+  .section-banner h2 .accent {
+    color: rgba(255, 255, 255, 0.65) !important;
+  }
+
+  .page-banner p,
+  .section-banner p {
+    font-size: 0.72rem !important;
+    line-height: 1.45 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin-top: 2px !important;
+  }
+
+  /* Hide manage-units button text on mobile — keep icon only */
+  .btn-manage-units {
+    padding: 7px 10px !important;
+    font-size: 0.72rem !important;
+  }
+
+  /* ── 10. DIRECTORY — MODERN INBOX DESIGN ── */
+  .directory-layout {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    padding-top: 10px !important;
+  }
+
+  .table-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  .table-header {
+    background: white !important;
+    border-radius: 14px !important;
+    padding: 15px !important;
+    margin-bottom: 15px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+  }
+
+  .data-table thead { display: none !important; }
+  .data-table, .data-table tbody, .data-table tr { display: block !important; width: 100% !important; }
+
+  .data-table tbody tr {
+    background: white !important;
+    border-radius: 18px !important;
+    padding: 18px !important;
+    margin-bottom: 14px !important;
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03) !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  .data-table td {
+    display: block !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* Unit Badge (Top Left) */
+  .data-table td:nth-child(2) {
+    order: -2 !important;
+  }
+
+  /* Status Badge (Top Right) */
+  .data-table td:nth-child(6) {
+    position: absolute !important;
+    top: 18px !important;
+    right: 18px !important;
+  }
+
+  /* Header Area: Name & Avatar simulation */
+  .data-table td:nth-child(3) {
+    font-size: 1.1rem !important;
+    font-weight: 800 !important;
+    color: #1a202c !important;
+    margin-top: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  /* Job Title */
+  .data-table td:nth-child(4) {
+    font-size: 0.72rem !important;
+    font-weight: 600 !important;
+    color: #718096 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    padding-left: 2px !important;
+  }
+
+  /* Email Address Pill */
+  .data-table td:nth-child(5) {
+    background: #f7fafc !important;
+    border: 1px solid #edf2f7 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    margin-top: 5px !important;
+  }
+
+  .email-cell-content {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+  }
+
+  .email-cell-content span {
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    color: #2d3748 !important;
+    word-break: break-all !important;
+  }
+
+  /* Actions Area */
+  .data-table td:nth-child(7) {
+    border-top: 1px solid #edf2f7 !important;
+    padding-top: 12px !important;
+    margin-top: 5px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+
+  .action-btns {
+    gap: 10px !important;
+  }
+
+  .btn-action {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 10px !important;
+    font-size: 0.85rem !important;
+    background: #f8fafc !important;
+  }
+
+  /* Custom styling for badges in mobile */
+  .unit-badge {
+    background: #ebf4ff;
+    color: #3182ce;
+    font-size: 0.65rem !important;
+    padding: 4px 10px !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+  }
+
+  .status-active {
+    background: #f0fff4 !important;
+    color: #38a169 !important;
+    padding: 4px 10px !important;
+    font-size: 0.65rem !important;
+  }
+
+  /* Numbering - hidden for cleaner look */
+  .data-table td:nth-child(1) {
+    display: none !important;
+  }
+
+  .data-table-wrap {
+    overflow: visible !important;
+  }
+
+  .data-table {
+    font-size: 0.8rem !important;
+    min-width: 100% !important;
+  }
+
+  .data-table th,
+  .data-table td {
+    white-space: normal !important;
+  }
+
+  /* ── 11. INPUTS — Prevent iOS zoom ── */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  .search-bar input {
+    font-size: 16px !important;
+  }
+
+  /* ── 11b. UNITS PAGE (Classification par Unités) ── */
+  .units-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .unit-stat-card {
+    border-radius: 10px !important;
+    padding: 16px 14px !important;
+    transform: none !important;
+    transition: opacity 0.15s ease !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18) !important;
+  }
+
+  .unit-stat-card:hover {
+    transform: none !important;
+  }
+
+  .unit-stat-header {
+    margin-bottom: 12px !important;
+  }
+
+  .unit-icon-box {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 8px !important;
+    font-size: 1rem !important;
+  }
+
+  .unit-stat-card h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .stat-row {
+    font-size: 0.78rem !important;
+  }
+
+  .stat-val {
+    font-size: 0.95rem !important;
+  }
+
+  .view-unit-btn {
+    padding: 9px 14px !important;
+    font-size: 0.78rem !important;
+    border-radius: 7px !important;
+    margin-top: 12px !important;
+  }
+
+  .copy-unit-mini {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 6px !important;
+    font-size: 0.72rem !important;
+  }
+
+  /* ── 11c. TOOL CARDS (Ressources page) ── */
+  .tools-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .tool-card {
+    border-radius: 14px !important;
+    padding: 16px 14px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07) !important;
+    transform: none !important;
+    transition: opacity 0.15s ease !important;
+    border-width: 1.5px !important;
+  }
+
+  .tool-card-top {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-bottom: 10px !important;
+  }
+
+  .tool-icon-box {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 10px !important;
+    font-size: 1.1rem !important;
+  }
+
+  .tool-badge {
+    font-size: 0.55rem !important;
+    padding: 3px 9px !important;
+    border-radius: 20px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .tool-card h3 {
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .tool-card p {
+    font-size: 0.75rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .tool-card-footer {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .tool-status {
+    font-size: 0.68rem !important;
+  }
+
+  .tool-btn {
+    padding: 8px 14px !important;
+    font-size: 0.75rem !important;
+    border-radius: 8px !important;
+  }
+
+  /* ── 12. MOBILE BOTTOM NAV — Chrome-Safe Fixed ── */
+  .mobile-bottom-nav {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    min-height: 62px !important;
+    height: auto !important;
+    background: #ffffff !important;
+    border-top: 1px solid #dde5f0 !important;
+    box-shadow: 0 -3px 16px rgba(0, 30, 80, 0.09) !important;
+    z-index: 9000 !important;
+    justify-content: space-around !important;
+    align-items: stretch !important;
+    padding: 0 0 env(safe-area-inset-bottom, 0px) !important;
+    /* Chrome-safe: NO backdrop-filter, NO transform, NO filter */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    will-change: auto !important;
+    filter: none !important;
+  }
+
+  .mob-nav-item {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 3px !important;
+    padding: 8px 2px !important;
+    color: #94a3b8 !important;
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+    cursor: pointer !important;
+    position: relative !important;
+    transition: color 0.2s !important;
+  }
+
+  .mob-nav-icon {
+    width: 26px !important;
+    height: 26px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+    font-size: 1rem !important;
+    color: inherit !important;
+  }
+
+  .mob-nav-label {
+    font-size: 0.58rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.2px !important;
+    line-height: 1 !important;
+    color: inherit !important;
+  }
+
+  .mob-nav-item.active {
+    color: #0056b3 !important;
+  }
+
+  .mob-nav-item.active .mob-nav-icon {
+    background: #dbeafe !important;
+    color: #0056b3 !important;
+    transform: none !important;
+  }
+
+  .mob-nav-item.active .mob-nav-label {
+    color: #0056b3 !important;
+    font-weight: 800 !important;
+  }
+
+  /* Center search button */
+  .mob-nav-center-btn {
+    flex: 0 0 64px !important;
+    margin-top: -18px !important;
+    padding: 0 !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding-top: 0 !important;
+    gap: 2px !important;
+  }
+
+  .mob-nav-center-ring {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    background: #0056b3 !important;
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.1rem !important;
+    box-shadow: 0 4px 16px rgba(0, 86, 179, 0.45) !important;
+    border: 3px solid #ffffff !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    transform: none !important;
+  }
+
+  .mob-nav-search-label {
+    font-size: 0.56rem !important;
+    font-weight: 700 !important;
+    color: #0056b3 !important;
+    margin-top: 2px !important;
+  }
+
+  /* Dark mode bottom nav */
+  html.dark-mode .mobile-bottom-nav {
+    background: #0a1420 !important;
+    border-top-color: #1a2640 !important;
+  }
+
+  html.dark-mode .mob-nav-center-ring {
+    border-color: #0a1420 !important;
+  }
+
+  html.dark-mode .mob-nav-item.active .mob-nav-icon {
+    background: rgba(0, 86, 179, 0.25) !important;
+  }
+
+  /* ── 13. MODALS ── */
+  .modal,
+  .modal-overlay,
+  .config-modal-overlay {
+    transform: none !important;
+    -webkit-transform: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .modal-box,
+  .modal-content,
+  .config-modal-box {
+    width: calc(100vw - 20px) !important;
+    max-width: 100% !important;
+    margin: 10px !important;
+    border-radius: 18px !important;
+    max-height: 88vh !important;
+    overflow-y: auto !important;
+  }
+
+  /* ── 14. DARK MODE BODY ── */
+  html.dark-mode body {
+    background: #060d16 !important;
+  }
+
+  html.dark-mode .hero-section::after {
+    background: #060d16 !important;
+  }
+
+  /* ── 15. SECTION HEADERS ── */
+  .section-header,
+  .section-title-wrap {
+    margin-bottom: 14px !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .section-title,
+  .section-header h2 {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+  }
+
+  /* ── 15. SIGNATURE GENERATOR MOBILE FIX ── */
+  .signature-form-panel .form-grid {
+    grid-template-columns: 1fr !important; /* Single column on mobile */
+    gap: 15px !important;
+  }
+
+  .signature-layout {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 25px !important;
+  }
+
+  .signature-preview-panel {
+    position: static !important; /* Remove sticky on mobile */
+  }
+
+  .preview-container {
+    padding: 20px 10px !important;
+    min-height: auto !important;
+  }
+
+  .sig-preview-box {
+    transform: scale(0.85); /* Slightly scale down preview to fit small screens */
+    padding: 15px !important;
+  }
+
+  /* ── 16. CONTACT/FORM LAYOUTS ── */
+  .contact-layout,
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ── 17. MISC FIXES ── */
+  .hero-stat-badge:nth-child(4) .hero-stat-icon {
+    color: #f59e0b !important;
+  }
+
+  /* Ensure no horizontal scroll from any element */
+  .hero-section,
+  .content-section,
+  .page-section {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+
+  /* ── 18. PERFORMANCE-LITE MODE ── */
+  html.performance-lite .stat-card:hover,
+  html.performance-lite .module-card:hover {
+    transform: none !important;
+    box-shadow: inherit !important;
+  }
+
+  /* ── 19. SUPPORT & ASSISTANCE MODAL FIXES ── */
+  #supportModal .config-modal-header h2 {
+    font-size: 0.88rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+  }
+
+  /* Hide the Support Hero banner and image on mobile as requested */
+  .support-hero {
+    display: none !important;
+  }
+
+  .support-contact-grid {
+    gap: 8px !important;
+  }
+
+  .support-contact-card {
+    padding: 10px 12px !important;
+    gap: 10px !important;
+  }
+
+  .contact-card-icon {
+    width: 34px !important;
+    height: 34px !important;
+    font-size: 0.95rem !important;
+    border-radius: 8px !important;
+  }
+
+  .contact-card-info strong {
+    font-size: 0.76rem !important;
+    word-break: break-all !important;
+  }
+
+  .contact-label {
+    font-size: 0.65rem !important;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .service-item {
+    padding: 10px !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .service-icon {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .service-item strong {
+    font-size: 0.72rem !important;
+  }
+
+  .service-item span {
+    display: none; /* Hide sub-text on mobile to save space */
+  }
+
+  /* ── 20. DARK MODE SUPPORT FOR EMAIL CARDS (MOBILE) ── */
+  html.dark-mode .email-mobile-card {
+    background: #111c15 !important;
+    border-color: rgba(27, 122, 75, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    border-left-color: var(--green) !important;
+  }
+
+  html.dark-mode .email-mobile-card td[data-label="Nom"] {
+    color: #e2f0e7 !important;
+  }
+
+  html.dark-mode .email-mobile-card td[data-label="Poste"] {
+    color: #a0aec0 !important;
+  }
+
+  html.dark-mode .email-mobile-card td[data-label="Email"] {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #4ade80 !important; /* Brighter green for better contrast */
+  }
+
+  html.dark-mode .email-mobile-card .email-cell-content span {
+    color: #cbd5e0 !important;
+  }
+
+  html.dark-mode .email-mobile-card .single-copy-btn {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+  }
+
+  html.dark-mode .email-mobile-card td[data-label="No"] {
+    color: #4a5568 !important;
+  }
+
+  /* Dark Mode Support for Table Header Banner */
+  html.dark-mode .table-header {
+    background: #111c15 !important;
+    border-color: rgba(27, 122, 75, 0.2) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  html.dark-mode .table-header h3 {
+    color: #e2f0e7 !important;
+  }
+
+  html.dark-mode .btn-copy {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #e2f0e7 !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   Extra-small phones (≤ 360px)
+   ═══════════════════════════════════════════════ */
+@media screen and (max-width: 360px) {
+  .stats-row {
+    gap: 6px !important;
+  }
+
+  .stat-card {
+    padding: 10px 10px !important;
+    min-height: 60px !important;
+    gap: 8px !important;
+  }
+
+  .stat-card-icon {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .stat-card-value {
+    font-size: 1.35rem !important;
+  }
+
+  .stat-card-label {
+    font-size: 0.48rem !important;
+  }
+
+  .module-grid {
+    gap: 6px !important;
+  }
+
+  .module-card {
+    padding: 11px 10px !important;
+  }
+
+  .module-body h3 {
+    font-size: 0.75rem !important;
+  }
+
+  .module-icon-colored {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .hero-title {
+    font-size: 1.55rem !important;
+  }
+
+  .hero-desc {
+    font-size: 0.76rem !important;
+    max-width: 260px !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════
+   Medium phones (480px – 768px)
+   ═══════════════════════════════════════════════ */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .stats-row {
+    gap: 12px !important;
+  }
+
+  .stat-card {
+    padding: 14px 16px !important;
+    min-height: 76px !important;
+  }
+
+  .stat-card-icon {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    font-size: 1.15rem !important;
+  }
+
+  .stat-card-value {
+    font-size: 1.9rem !important;
+  }
+
+  .stat-card-label {
+    font-size: 0.62rem !important;
+  }
+
+  .module-grid {
+    gap: 12px !important;
+  }
+
+  .module-card {
+    padding: 18px 14px !important;
+  }
+
+  .module-body h3 {
+    font-size: 0.9rem !important;
+  }
+
+  .module-body p {
+    display: block !important;
+    font-size: 0.72rem !important;
+  }
+
+  .module-icon-colored {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1.1rem !important;
+  }
+}
